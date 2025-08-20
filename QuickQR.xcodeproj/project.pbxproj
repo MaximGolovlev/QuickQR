@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		B591FAF52E539720005AC05C /* ReelRover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReelRover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B591FAF52E539720005AC05C /* QuickQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		B591FAF62E539720005AC05C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B591FAF52E539720005AC05C /* ReelRover.app */,
+				B591FAF52E539720005AC05C /* QuickQR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B591FAF42E539720005AC05C /* ReelRover */ = {
+		B591FAF42E539720005AC05C /* QuickQR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B591FB032E539722005AC05C /* Build configuration list for PBXNativeTarget "ReelRover" */;
+			buildConfigurationList = B591FB032E539722005AC05C /* Build configuration list for PBXNativeTarget "QuickQR" */;
 			buildPhases = (
 				B591FAF12E539720005AC05C /* Sources */,
 				B591FAF22E539720005AC05C /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				B591FAF72E539720005AC05C /* ReelRover */,
 			);
-			name = ReelRover;
+			name = QuickQR;
 			packageProductDependencies = (
 			);
 			productName = ReelRover;
-			productReference = B591FAF52E539720005AC05C /* ReelRover.app */;
+			productReference = B591FAF52E539720005AC05C /* QuickQR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B591FAF02E539720005AC05C /* Build configuration list for PBXProject "ReelRover" */;
+			buildConfigurationList = B591FAF02E539720005AC05C /* Build configuration list for PBXProject "QuickQR" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B591FAF42E539720005AC05C /* ReelRover */,
+				B591FAF42E539720005AC05C /* QuickQR */,
 			);
 		};
 /* End PBXProject section */
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B591FAF02E539720005AC05C /* Build configuration list for PBXProject "ReelRover" */ = {
+		B591FAF02E539720005AC05C /* Build configuration list for PBXProject "QuickQR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B591FB012E539722005AC05C /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B591FB032E539722005AC05C /* Build configuration list for PBXNativeTarget "ReelRover" */ = {
+		B591FB032E539722005AC05C /* Build configuration list for PBXNativeTarget "QuickQR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B591FB042E539722005AC05C /* Debug */,
