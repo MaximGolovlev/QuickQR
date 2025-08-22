@@ -88,7 +88,7 @@ struct HistoryView: View {
     private var qrCollectionView: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 16) {
-                ForEach(historyModel.historyItems) { item in
+                ForEach(filteredItems) { item in
                     HistoryQRCell(item: item, qrImage: generateQR(from: item.content))
                         .onTapGesture {
                             navigationPath.append(item)
@@ -106,7 +106,9 @@ struct HistoryView: View {
                                 Label("Share", systemImage: "square.and.arrow.up")
                             }
                         }
+                        .transition(.opacity)
                 }
+                .animation(.easeInOut(duration: 0.3), value: filteredItems)
             }
             .padding()
         }
