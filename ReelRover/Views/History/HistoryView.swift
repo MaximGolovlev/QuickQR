@@ -13,6 +13,7 @@ struct HistoryView: View {
     @EnvironmentObject private var historyModel: HistoryViewModel
     @State private var navigationPath = NavigationPath()
     @State private var searchText = ""
+    @State private var showAlert = false
     
     private let columns = [
         GridItem(.flexible(), spacing: 16),
@@ -44,6 +45,16 @@ struct HistoryView: View {
                         noResultsView
                     } else {
                         qrCollectionView
+                            .toolbar {
+                                ToolbarItem(placement: .topBarTrailing) {
+                                    Button {
+                                        showAlert = true
+                                    } label: {
+                                        Image(systemName: "trash")
+                                    }
+
+                                }
+                            }
                     }
                 }
                 .navigationTitle("History")
@@ -52,6 +63,12 @@ struct HistoryView: View {
                 }
                 .searchable(text: $searchText, prompt: "Search QR codes")
                 .autocorrectionDisabled(true)
+                .alert("Clear History?", isPresented: $showAlert) {
+                    Button("Cancel", role: .cancel) {}
+                    Button("Clear", role: .destructive) {
+                        historyModel.deleteItems()
+                    }
+                }
             }
         }
     }

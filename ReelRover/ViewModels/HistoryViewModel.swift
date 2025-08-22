@@ -26,6 +26,11 @@ class HistoryViewModel: ObservableObject {
         saveItems()
     }
     
+    func deleteItems() {
+        historyItems.removeAll()
+        saveItems()
+    }
+    
     private func saveItems() {
         if let encoded = try? JSONEncoder().encode(historyItems) {
             UserDefaults.standard.set(encoded, forKey: saveKey)

@@ -28,7 +28,7 @@ struct QRGeneratorView: View {
                             .font(.system(size: 40))
                             .foregroundColor(.app.accentText)
                         
-                        Text("QR Generator")
+                        Text("Quick QR")
                             .font(.largeTitle.bold())
                             .foregroundColor(.app.primaryText)
                         
@@ -114,27 +114,6 @@ struct QRGeneratorView: View {
             .onTapGesture {
                 isInputFocused = false
             }
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    Menu {
-//                        ForEach(AppColors.Theme.allCases, id: \.self) { theme in
-//                            Button(action: {
-//                                selectedTheme = theme
-//                            }) {
-//                                HStack {
-//                                    Text(theme.rawValue)
-//                                    if selectedTheme == theme {
-//                                        Image(systemName: "checkmark")
-//                                    }
-//                                }
-//                            }
-//                        }
-//                    } label: {
-//                        Image(systemName: "paintpalette.fill")
-//                            .foregroundColor(.app.accentText)
-//                    }
-//                }
-//            }
             .alert("Error", isPresented: $viewModel.showAlert) {
                 Button("OK", role: .cancel) { }
             } message: {
