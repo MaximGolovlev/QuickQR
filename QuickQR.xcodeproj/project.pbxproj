@@ -11,10 +11,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B5FC56352E62E47E0086CEA4 /* Exceptions for "QuickQR" folder in "QuickQR" target */ = {
+		B5FC584C2E6309D90086CEA4 /* Exceptions for "QuickQR" folder in "QuickQR" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"App/QuickQR-Info.plist",
+				Info.plist,
 			);
 			target = B591FAF42E539720005AC05C /* QuickQR */;
 		};
@@ -24,7 +24,7 @@
 		B591FAF72E539720005AC05C /* QuickQR */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				B5FC56352E62E47E0086CEA4 /* Exceptions for "QuickQR" folder in "QuickQR" target */,
+				B5FC584C2E6309D90086CEA4 /* Exceptions for "QuickQR" folder in "QuickQR" target */,
 			);
 			path = QuickQR;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 				DEVELOPMENT_TEAM = B7HZ65DT3V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/QuickQR/App/QuickQR-Info.plist";
+				INFOPLIST_FILE = QuickQR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,7 +301,7 @@
 				DEVELOPMENT_TEAM = B7HZ65DT3V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/QuickQR/App/QuickQR-Info.plist";
+				INFOPLIST_FILE = QuickQR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
